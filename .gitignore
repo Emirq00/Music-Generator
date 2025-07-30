@@ -1,0 +1,7 @@
+DL/
+Ola.py
+Pt1.ipynb
+.ipynb_checkpoints
+*.wav
+training_checkpoints
+Music_Generation.ipynb
