@@ -1,1 +1,5 @@
 # Music-Generator
+
+Music-Generator was born as a hands-on application of the concepts taught in MIT’s Deep Learning course. In this project, recurrent neural networks learn musical patterns from ABC notation files and then generate entirely new pieces. By mapping each musical symbol to a trainable embedding vector, minimizing the divergence between predicted and actual notes through cross-entropy loss, and updating weights efficiently with the ADAM optimizer, the model gradually internalizes the structure of melody and rhythm.
+
+The dataset comprises collections of both traditional and contemporary tunes encoded in ABC, a plain-text music notation format widely used for monophonic music. Every file specifies meter, key signature and a sequence of notes, allowing the model to consume raw text sequences directly. Prior to training, the pipeline extracts the symbol vocabulary, normalizes sequence lengths and assembles training batches that the network processes iteratively, ensuring consistent input dimensions and efficient GPU usage.
